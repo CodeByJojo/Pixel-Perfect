@@ -1,0 +1,108 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+.userName {
+  color: rgb(241, 89, 0);
+}
+.comment {
+  text-indent: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(13, 107, 230);
+}
+
+#navigate li {
+  display: inline-block;
+  width: 5%;
+  padding: 1em;
+}
+
+
+
+
+
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+
+
+/******************************************
+/* EDITOR
+/*******************************************/
+
+#editor #ql-toolbar{
+  width: 50%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.makeGreen {
+  color: rgb(15, 83, 15);
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+img {
+  width: 45%;
+}
+
+.title {
+  font-size: 3rem;
+}

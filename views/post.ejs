@@ -1,0 +1,96 @@
+<%- include('partials/header') -%>
+
+
+
+		
+        <h1>This is the Posts page</h1>
+
+        <hr>
+        <ul id="navigate">	
+          <li><h2><a href="/">Index</a></h2></li>
+          <li><h2><a href="/pixel">Pixel Home</a></h2></li>
+          <li><h2><a href="/profile">Profile</a></h2></li>
+          <li><h2><a href="/signup">Signup</a></h2></li>
+          <li><h2><a href="/login">Login</a></h2></li>
+
+          <%if(user.level == 'admin'){ %>
+            <li><h2><a href="/editor">Editor</a></h2></li>
+          <%}%> 
+        </ul>
+        
+    
+        <hr>
+
+		<h2><%= post.title %></h2>
+      <img class="img-fluid" src="<%= post.image%>" />
+      <div class="row justify-content-between">
+        <form
+          class="col-1"
+          action="/post/likePost/<%= post.id %>?_method=PUT"
+          method="POST"
+        >
+          <button class="btn btn-primary fa fa-heart" type="submit">Like</button>
+        </form>
+        <h3 class="col-3">Likes: <%= post.likes %></h3>
+        <%if(post.userName == user.userName){ %>
+        <form
+          action="/post/deletePost/<%= post.id %>?_method=DELETE"
+          method="POST"
+          class="col-3"
+        >
+          <button class="btn btn-primary fa fa-trash" type="submit">Delete?</button>
+        </form>
+		<%}%>
+
+		<p><%= post.caption %></p>
+    <hr>
+
+    <p> Written by <%= post.user.userName %></p>
+
+    <hr>
+    <form action="/post/createComment/<%= post.id %>" method="POST">
+
+			<label for="caption" class="form-label">Comment</label>
+      <textarea class="form-control" id="text" name="text"></textarea>
+
+			<button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+		</form>
+
+		<hr>
+        <h1>Comments</h1>
+
+        
+        <ul>
+          <% for(var i=0; i<post.comments.length; i++) {%>
+            <li>
+              <h2 class="userName"> <%= post.comments[i].userName%>:</h2>
+              <h2 class="comment"><%=post.comments[i].text%></h2>
+
+              <%if(post.comments[i].userName == user.userName){ %>
+                <form
+                  action="/post/deleteComment/<%= post.comments[i].id %>?_method=DELETE"
+                  method="POST"
+                  class="col-3" >
+
+                  <button class="btn btn-primary fa fa-trash" type="submit">Delete</button>
+                </form>
+                <%}%>
+            <hr>
+            </li>
+          <% } %>
+        </ul>
+    <hr>
+
+	
+
+
+    
+      
+
+    
+
+    
+
+    
+		
+<%- include('partials/footer') -%>

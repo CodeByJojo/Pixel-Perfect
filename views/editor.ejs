@@ -1,0 +1,44 @@
+<%- include('partials/header') -%>
+
+
+		<h1>This is the Editor page</h1>
+
+		<hr>
+		<form action="/post/createPost" enctype="multipart/form-data" method="POST">
+
+			<label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" name="title">
+
+			<label for="caption" class="form-label">Caption</label>
+            <textarea class="form-control" id="caption" name="caption"></textarea>
+
+			<label for="imgUpload" class="form-label">Image</label>
+            <input type="file" class="form-control" id="imageUpload" name="file">
+
+			<button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+		</form>
+
+		<hr>
+
+		<hr>
+
+		<h2><a href="/">Index</a></h2>
+		<h2><a href="/pixel">Pixel Home</a></h2>
+		<h2><a href="/post">Post</a></h2>
+		<h2><a href="/profile">Profile</a></h2>
+		<h2><a href="/signup">Signup</a></h2>
+		<h2><a href="/login">Login</a></h2>
+		<h2><a href="/editor">Editor</a></h2>
+
+
+		
+		<footer id="footer">
+			<p class="copyright">&copy; Code by Jojo.</p>
+		</footer>
+		
+		<%= console.log('Sup') %>
+		
+		  
+		<script type="text/javascript" src="js/main.js"></script>
+		</body>
+		</html>
