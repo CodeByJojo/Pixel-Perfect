@@ -29,6 +29,8 @@ body {
   width: 60%;
   text-align: center;
   margin: 0 auto;
+
+  background-color: rgb(27, 36, 48);
 }
 
 li {
@@ -42,19 +44,27 @@ li {
   text-indent: 2rem;
 }
 
-a {
+a, h1, h2 {
   text-decoration: none;
-  color: black;
+  color: rgb(189, 189, 189);
 }
 
 a:hover {
-  color: rgb(13, 107, 230);
+  color: rgb(48, 97, 161);
 }
 
 #navigate li {
   display: inline-block;
   width: 5%;
   padding: 1em;
+}
+
+#userNameDisplay {
+  color: rgb(255, 94, 0);
+}
+
+#PPTitle {
+  font-family: 'Bebas Neue', cursive;
 }
 
 
@@ -68,14 +78,15 @@ a:hover {
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+#choice img {
+  width: 10%;
+  border-radius: 50%;
+  margin: 0 15px
 }
 
-footer {
-
+hr {
+  width: 50%;
 }
-
 
 
 /******************************************

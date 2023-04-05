@@ -1,9 +1,9 @@
 <%- include('partials/header') -%>
 
 <div id="thePage">
-        <h1>This is the Pixel Perfect Home Page</h1>
+        <h1 id="PPTitle">This is the Pixel Perfect Home Page</h1>
 
-		<h2> <%= user.userName %> | <%= user.level %> | <a href="/logout">
+		<h2 id="userNameDisplay"> <%= user.userName %> | <%= user.level %> | <a href="/logout">
 			<button class="out" type="button">Logout</button>
 		</a></h2>
 
@@ -19,7 +19,15 @@
 				<li><h2><a href="/editor">Editor</a></h2></li>
 			  <%}%> 
 		</ul>
-		
+		<hr>
+			<div id='choice'>
+				<div id="topChoice">
+					<img src="/resources/Pic1.jpg">
+					<img src="/resources/Pic2.jpg">
+					<img src="/resources/Pic3.jpg">
+				</div>
+				
+			</div>
 
 		<hr>
 		<ul>
@@ -28,10 +36,11 @@
 				
 				<a href="/post/<%= posts[i]._id%>">
 					<h2 class="title"><%= posts[i].title%></h2>
-					<h2><%= `Written by ${posts[i].userName}`%></h2>
+					
 				  <img class="img-fluid" src="<%= posts[i].image%>">
-				  <h2><%= posts[i].caption%></h2>
 				</a>
+				  <h2><%= posts[i].caption%></h2>
+				  <h2><%= `Written by ${posts[i].userName}`%></h2>
 				<hr>
 			  </li>
 			<% } %>
