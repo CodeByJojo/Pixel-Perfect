@@ -55,4 +55,4 @@ app.use('/post', postRoutes);
 //Run Server
 app.listen(process.env.PORT, () => {
     console.log('Itsa Runnin!');
-});
+}); 
