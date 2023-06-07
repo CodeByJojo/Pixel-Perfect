@@ -1,19 +1,25 @@
 <%- include('partials/header') -%>
 
 
-		<h1>Create A Story</h1>
+		<h1>Article Forge</h1>
 
 		<hr>
-		<form action="/post/createPost" enctype="multipart/form-data" method="POST">
+		<form id="editorForm" action="/post/createPost" enctype="multipart/form-data" method="POST">
 
-			<label for="title" class="form-label">Title</label>
-            <input type="text" class="form-control" id="title" name="title">
+			<label for="title" class="form-label"></label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+
+			<br>
 
 			<label for="caption" class="form-label">Caption</label>
             <textarea class="form-control" id="caption" name="caption"></textarea>
 
+			<br>
+
 			<label for="imgUpload" class="form-label">Image</label>
             <input type="file" class="form-control" id="imageUpload" name="file">
+
+			<br>
 
 			<button type="submit" class="btn btn-primary" value="Upload">Submit</button>
 		</form>

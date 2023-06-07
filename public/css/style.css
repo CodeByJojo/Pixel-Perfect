@@ -64,14 +64,32 @@ a:hover {
   margin-left: 575px;
 }
 
-.form-label, .form-control {
+.form-label{
   color: aliceblue;
+  margin-top: 15px;
+}
+
+.form-control{
+  margin-top: 15px;
+  height: 5rem;
 }
 
 #PPTitle {
   font-family: 'Bebas Neue', cursive;
 }
 
+#caption {
+  width: 40rem;
+  height: 20rem;
+}
+
+.btn-primary {
+  margin-top: 30px;
+  width: 10rem;
+  height: 3rem;
+  font-size: 2.5rem;
+  font-family: 'Bebas Neue';
+}
 
 
 
