@@ -61,6 +61,11 @@ a:hover {
 
 #userNameDisplay {
   color: rgb(255, 94, 0);
+  margin-left: 575px;
+}
+
+.form-label, .form-control {
+  color: aliceblue;
 }
 
 #PPTitle {
@@ -116,4 +121,8 @@ img {
 
 .title {
   font-size: 3rem;
+}
+
+.copyright {
+  color: aliceblue;
 }
