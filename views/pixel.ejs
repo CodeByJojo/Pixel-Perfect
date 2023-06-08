@@ -3,9 +3,15 @@
 <div id="thePage">
         <h1 id="PPTitle">Pixel Perfect</h1>
 
+		<% if (user && user.userName) { %>
+
 		<h2 id="userNameDisplay"> <%= user.userName %> | <%= user.level %> | <a href="/logout">
 			<button class="out" type="button">Logout</button>
 		</a></h2>
+
+		<% } else { %>
+			<h2 id="userNameDisplay"> Welcome Guest </h2>
+		<% } %>
 
 		<hr>
 		<ul id="navigate">	
@@ -15,7 +21,7 @@
 			<li><h2><a href="/signup">Signup</a></h2></li>
 			<li><h2><a href="/login">Login</a></h2></li>
 			
-			<%if(user.level == 'admin'){ %>
+			<%if(user && user.userName && user.level == 'admin'){ %>
 				<li><h2><a href="/editor">Editor</a></h2></li>
 			  <%}%> 
 		</ul>

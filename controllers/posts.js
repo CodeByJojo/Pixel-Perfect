@@ -118,15 +118,16 @@ module.exports = {
     getPixel: async (req, res) => {
        try {
         const posts = await Post.find().sort({ createdAt: 'desc' }).lean();
+        const user = req.user;
 
         if(req.session){
-            res.render('pixel.ejs', {posts: posts, user:req.user});
+            res.render('pixel.ejs', {posts: posts, user: user});
         } else {
             res.render('pixel.ejs', {posts: posts})};
        } catch (err) {
         console.log(err);
        }
     },
-} 
+}
 
 

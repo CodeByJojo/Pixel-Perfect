@@ -39,7 +39,7 @@ exports.postLogin = (req, res, next) => {
                 return next(err);
             }
             req.flash('success', { msg: 'Success! You are now logged in!' });
-            res.redirect(req.session.returnTo || '/pixel'); //Maybe Change
+            res.redirect( '/pixel' || req.session.returnTo ); //swapped, returnTo was first
         });
     })(req, res, next);
 };
