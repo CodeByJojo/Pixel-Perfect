@@ -52,7 +52,7 @@ exports.logout = (req, res) => {
         if (err)
         console.log('Error: failed to destroy session', err);
         req.user = null;
-        res.redirect('/');
+        res.redirect('/pixel');
     });
 };
 
