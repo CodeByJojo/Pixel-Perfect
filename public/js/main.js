@@ -5,7 +5,10 @@ function turnGreen() {
     console.log('Greenified')
 }
 
-
+function toggleMenu() {
+    var menu = document.getElementById('menu');
+    menu.classList.toggle('show-menu');
+  }
 
 
 // Delete Function
