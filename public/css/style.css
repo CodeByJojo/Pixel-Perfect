@@ -56,7 +56,7 @@ a:hover {
 #navigate li {
   display: inline-block;
   width: 5%;
-  padding: 1em;
+  padding: 5em;
 }
 
 #userNameDisplay {
@@ -74,8 +74,10 @@ a:hover {
   height: 5rem;
 }
 
-#PPTitle {
+#PPTitle a{
   font-family: 'Bebas Neue', cursive;
+  color: crimson;
+  font-size: 10rem;
 }
 
 #caption {
@@ -143,4 +145,22 @@ img {
 
 .copyright {
   color: aliceblue;
+}
+
+/* 1400 px width */
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media screen and (max-width: 1400px) {
+  #PPTitle a {
+    color: crimson;
+  }
+
+  /* #navigate li a{
+    color: crimson;
+    display: flex;
+    justify-content: space-evenly;
+  } */
 }
