@@ -168,42 +168,48 @@ img {
 /* ------------- */
 .navbar {
   background-color: #333;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  padding: 10px;
+  position: relative;
+  z-index: 999;
+  width: 10rem;
 }
 
-.menu-Icon {
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.menu {
+.navbar ul {
   list-style-type: none;
-  display: none; /* Hide the menu by default */
-  padding: 0;
   margin: 0;
+  padding: 0;
+  background: black;
 }
 
-.menu li {
-  padding: 8px;
+.navbar li {
+  display: inline-block;
 }
 
-.menu li a {
-  color: #fff;
+.navbar li a {
+  color: white;
+  display: block;
+  padding: 10px 20px;
   text-decoration: none;
 }
 
-/* Show the menu when it is toggled */
-.show-menu .menu {
+/* Style the dropdown menu */
+.navbar ul ul {
+  position: absolute;
+  top: 100%;
+  display: none;
+}
+
+.navbar ul ul li {
   display: block;
 }
 
+.navbar li:hover ul {
+  display: block;
+}
 
-
-
-
+/* Change the background color of dropdown links on hover */
+.navbar ul ul li a:hover {
+  background-color: #555;
+}
 
 
 /******************************************

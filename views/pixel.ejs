@@ -26,15 +26,22 @@
 			  <%}%> 
 		</ul>
 
-		<div class="navbar">
-			<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-			<ul class="menu" id="menu">
-				<li><h2><a href="/profile">Profile</a></h2></li>
-			<li><h2><a href="/signup">Signup</a></h2></li>
-			<li><h2><a href="/login">Login</a></h2></li>
-			</ul>
-		</div>
+		<nav class="navbar">
+			<ul>
+				
+				<li>
+					<a href="#">Dropdown</a>
+					<ul>
+						<li><a href="/login">Login</a></li>
+						<li><a href="/">Index</a></li>
 
+						<%if(user && user.userName && user.level == 'admin'){ %>
+							<li><h2><a href="/editor">Editor</a></h2></li>
+						  <%}%> 
+					</ul>
+				</li>
+			</ul>
+		</nav>
 
 
 
