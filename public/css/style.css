@@ -57,11 +57,12 @@ a:hover {
   display: inline-block;
   width: 5%;
   padding: 5em;
+  
 }
 
 #userNameDisplay {
   color: rgb(255, 94, 0);
-  margin-left: 575px;
+  /* margin-left: 575px; */
 }
 
 .form-label{
@@ -91,6 +92,23 @@ a:hover {
   height: 3rem;
   font-size: 2.5rem;
   font-family: 'Bebas Neue';
+}
+
+.out {
+   
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #ff5252;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  
+.out:hover {
+  background-color: #e03d3d;
 }
 
 
