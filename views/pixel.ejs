@@ -17,9 +17,7 @@
 		<ul id="navigate">
 			<!-- <li><h2><a href="/">Index</a></h2></li> -->
 			<!-- <li><h2><a href="/pixel">Pixel Home</a></h2></li> -->
-			<li><h2><a href="/profile">Profile</a></h2></li>
-			<li><h2><a href="/signup">Signup</a></h2></li>
-			<li><h2><a href="/login">Login</a></h2></li>
+			
 			
 			<%if(user && user.userName && user.level == 'admin'){ %>
 				<li><h2><a href="/editor">Editor</a></h2></li>
@@ -30,10 +28,13 @@
 			<ul>
 				
 				<li>
-					<a href="#"><i class="fa-solid fa-caret-down" style="color: #800000;"></i></a>
+					<a href="#" class="lock"><i class="fa-solid fa-caret-down icon-unlock fa-5x" style="color: #dc143c;"></i></a>
 					<ul>
 						<li><a href="/login">Login</a></li>
 						<li><a href="/">Index</a></li>
+						<li><h2><a href="/profile">Profile</a></h2></li>
+						<li><h2><a href="/signup">Signup</a></h2></li>
+						<li><h2><a href="/login">Login</a></h2></li>
 
 						<%if(user && user.userName && user.level == 'admin'){ %>
 							<li><h2><a href="/editor">Editor</a></h2></li>

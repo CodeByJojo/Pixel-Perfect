@@ -77,7 +77,7 @@ a:hover {
 
 #PPTitle a{
   font-family: 'Bebas Neue', cursive;
-  color: crimson;
+  color: #dc143c;
   font-size: 10rem;
 }
 
@@ -209,6 +209,16 @@ img {
 /* Change the background color of dropdown links on hover */
 .navbar ul ul li a:hover {
   background-color: #555;
+}
+
+/* ---- */
+.lock:hover .icon-unlock:before {
+  content: "\f0d8";
+  transition: 0.9s ease;
+}
+
+i {
+  font-size: 10rem;
 }
 
 
