@@ -177,7 +177,7 @@ img {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background: black;
+  background: rgb(27, 36, 48);
 }
 
 .navbar li {
