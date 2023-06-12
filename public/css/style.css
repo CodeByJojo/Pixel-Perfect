@@ -169,7 +169,7 @@ img {
 .navbar {
   background-color: #333;
   position: relative;
-  z-index: 999;
+  /* z-index: 999; */
   width: 10rem;
 }
 
@@ -196,19 +196,25 @@ img {
   position: absolute;
   top: 100%;
   display: none;
+  text-align: center;
+  left: 0;
+  width: 100%;
 }
 
 .navbar ul ul li {
   display: block;
+  text-align: center;
 }
 
 .navbar li:hover ul {
   display: block;
+  text-align: center;
 }
 
 /* Change the background color of dropdown links on hover */
 .navbar ul ul li a:hover {
-  background-color: #555;
+  background-color: rgb(21, 28, 37);
+  border-radius: 5px;
 }
 
 /* ---- */
@@ -219,6 +225,10 @@ img {
 
 i {
   font-size: 10rem;
+}
+
+#theStart{
+  display: inline-block
 }
 
 
