@@ -235,8 +235,12 @@ i {
   display: inline-block
 }
 
-* {
+/* * {
   outline: 1px solid red
+} */
+
+h3 {
+  color: white;
 }
 
 

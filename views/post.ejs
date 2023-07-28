@@ -2,21 +2,28 @@
 
 
 
-		
-        <h1>This is the Posts page</h1>
+<h1 id="PPTitle"><a href='/pixel'>Pixel Perfect</a></h1>
+
+        <h3>This is the Posts page</h3>
 
         <hr>
-        <ul id="navigate">	
-          <li><h2><a href="/">Index</a></h2></li>
-          <li><h2><a href="/pixel">Pixel Home</a></h2></li>
-          <li><h2><a href="/profile">Profile</a></h2></li>
-          <li><h2><a href="/signup">Signup</a></h2></li>
-          <li><h2><a href="/login">Login</a></h2></li>
-
-          <%if(user.level == 'admin'){ %>
-            <li><h2><a href="/editor">Editor</a></h2></li>
-          <%}%> 
-        </ul>
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a href="#" class="lock"><i class="fa-solid fa-caret-down icon-unlock fa-5x" style="color: #dc143c;"></i></a>
+              <ul>
+                <li><h2><a href="/">Index</a></h2></li>
+                <li><h2><a href="/profile">Profile</a></h2></li>
+                <li><h2><a href="/signup">Signup</a></h2></li>
+                <li><h2><a href="/login">Login</a></h2></li>
+    
+                <%if(user && user.userName && user.level == 'admin'){ %>
+                  <li><h2><a href="/editor">Editor</a></h2></li>
+                  <%}%> 
+              </ul>
+            </li>
+          </ul>
+        </nav>
         
     
         <hr>
@@ -33,13 +40,15 @@
         </form>
         <h3 class="col-3">Likes: <%= post.likes %></h3>
         <%if(post.userName == user.userName){ %>
-        <form
+
+        <!--Broken Delete Button-->
+        <!-- <form
           action="/post/deletePost/<%= post.id %>?_method=DELETE"
           method="POST"
           class="col-3"
         >
           <button class="btn btn-primary fa fa-trash" type="submit">Delete?</button>
-        </form>
+        </form> -->
 		<%}%>
 
 		<p><%= post.caption %></p>
