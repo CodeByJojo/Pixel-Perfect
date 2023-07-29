@@ -243,6 +243,10 @@ h3 {
   color: white;
 }
 
+.postTitle {
+  color: #ffffff;
+  font-size: 4rem;
+}
 
 /******************************************
 /* MEDIA QUERIES
