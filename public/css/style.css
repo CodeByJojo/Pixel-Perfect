@@ -248,6 +248,17 @@ h3 {
   font-size: 4rem;
 }
 
+.postCaption {
+  color: white;
+  font-size: 3rem;
+}
+
+.author {
+  color: white;
+}
+
+
+
 /******************************************
 /* MEDIA QUERIES
 /*******************************************/

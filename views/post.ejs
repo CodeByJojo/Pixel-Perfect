@@ -30,15 +30,22 @@
 
 		<h2 class="postTitle"><%= post.title %></h2>
       <img class="img-fluid" src="<%= post.image%>" />
+
       <div class="row justify-content-between">
         <form
           class="col-1"
           action="/post/likePost/<%= post.id %>?_method=PUT"
-          method="POST"
-        >
+          method="POST">
+
+        
           <button class="btn btn-primary fa fa-heart" type="submit">Like</button>
-        </form>
-        <h3 class="col-3">Likes: <%= post.likes %></h3>
+
+          </form> 
+
+         <h3 class="col-3"> <%= post.likes %></h3>
+        </div>
+      
+
         <%if(post.userName == user.userName){ %>
 
         <!--Broken Delete Button-->
@@ -51,10 +58,10 @@
         </form> -->
 		<%}%>
 
-		<p><%= post.caption %></p>
+		<p class="postCaption"><%= post.caption %></p>
     <hr>
 
-    <p> Written by <%= post.user.userName %></p>
+    <p class="author">Written by <%= post.user.userName %></p>
 
     <hr>
     <form action="/post/createComment/<%= post.id %>" method="POST">
