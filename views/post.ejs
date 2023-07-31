@@ -29,6 +29,7 @@
         <hr>
 
 		<h2 class="postTitle"><%= post.title %></h2>
+    <p class="author">by <%= post.user.userName %></p>
       <img class="img-fluid" src="<%= post.image%>" />
 
       <div class="row justify-content-between">
@@ -59,10 +60,6 @@
 		<%}%>
 
 		<p class="postCaption"><%= post.caption %></p>
-    <hr>
-
-    <p class="author">Written by <%= post.user.userName %></p>
-
     <hr>
     <form action="/post/createComment/<%= post.id %>" method="POST">
 
