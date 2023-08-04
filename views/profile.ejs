@@ -1,18 +1,48 @@
 <%- include('partials/header') -%>
 
+<h1 id="PPTitle"><a href='/pixel'>Pixel Perfect</a></h1>
 
+<hr>
+<nav class="navbar">
+  <ul>
+	<li>
+	  <a href="#" class="lock"><i class="fa-solid fa-caret-down icon-unlock fa-5x" style="color: #dc143c;"></i></a>
+	  <ul>
+		<li><h2><a href="/">Index</a></h2></li>
+		<li><h2><a href="/profile">Profile</a></h2></li>
+		<li><h2><a href="/signup">Signup</a></h2></li>
+		<li><h2><a href="/login">Login</a></h2></li>
+
+		<%if(user && user.userName && user.level == 'admin'){ %>
+		  <li><h2><a href="/editor">Editor</a></h2></li>
+		  <%}%> 
+	  </ul>
+	</li>
+  </ul>
+</nav>
 		
-        <h1>This is the Profile Page</h1>
+        <h3>This is the Profile Page</h3>
 
 		<hr>
 
-		<h2><a href="/">Index</a></h2>
-		<h2><a href="/pixel">Pixel Home</a></h2>
-		<h2><a href="/post">Post</a></h2>
-		<h2><a href="/profile">Profile</a></h2>
-		<h2><a href="/signup">Signup</a></h2>
-		<h2><a href="/login">Login</a></h2>
-		<h2><a href="/editor">Editor</a></h2>
+		
+
+		<ul>
+			<% for(var i=0; i<posts.length; i++) {%>
+			  <li>
+				
+				<a href="/post/<%= posts[i]._id%>">
+					<h2 class="title"><%= posts[i].title%></h2>
+					<h2><%= `Written by ${posts[i].userName}`%></h2>
+					
+				  <img class="img-fluid" src="<%= posts[i].image%>">
+				</a>
+				  <h2><%= posts[i].caption%></h2>
+				  
+				<hr>
+			  </li>
+			<% } %>
+			</ul>
 
 
 		

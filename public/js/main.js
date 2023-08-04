@@ -6,6 +6,8 @@ function turnGreen() {
 }
 
 
+const num = [1, 2, 3]
+
 
 
 // Delete Function

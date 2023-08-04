@@ -25,6 +25,8 @@ html {
 /* BASE STYLES
 /*******************************************/
 
+
+
 body {
   width: 60%;
   text-align: center;
@@ -38,7 +40,7 @@ li {
 }
 
 .userName {
-  color: rgb(241, 89, 0);
+  color: rgb(241, 108, 0);
 }
 .comment {
   text-indent: 2rem;
@@ -61,7 +63,7 @@ a:hover {
 }
 
 #userNameDisplay {
-  color: rgb(255, 94, 0);
+  color: rgb(0, 183, 255);
   /* margin-left: 575px; */
 }
 
@@ -154,6 +156,7 @@ hr {
 
 h1 {
   font-size: 5rem;
+  font-family: 'Bebas Neue', cursive
 }
 
 img {
@@ -258,6 +261,17 @@ h3 {
   margin-top: -30px;
 }
 
+form {
+  font-size: 3rem;
+  border-radius: 20px;
+}
+
+form input {
+  border-radius: 10px;
+  color: #000000;
+  text-align: center;
+  
+}
 
 
 /******************************************
