@@ -21,6 +21,10 @@ html {
   font-size: 62.5%;
 }
 
+/* * {
+  outline: 1px solid red
+} */
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -241,10 +245,6 @@ i {
 #theStart{
   display: inline-block
 }
-
-/* * {
-  outline: 1px solid red
-} */
 
 h3 {
   color: white;
