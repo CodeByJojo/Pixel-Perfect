@@ -187,6 +187,10 @@ img {
   background: rgb(27, 36, 48);
 }
 
+.navbar ul li {
+  background: transparent;
+}
+
 .navbar li {
   display: inline-block;
 }
