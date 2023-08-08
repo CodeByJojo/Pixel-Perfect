@@ -133,4 +133,4 @@ exports.getPixel = (req, res) => { //This might be needed in posts controllers
     res.render('Pixel', {
         title: 'Pixel',
     });
-};
+}; 
