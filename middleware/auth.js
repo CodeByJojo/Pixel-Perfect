@@ -3,7 +3,7 @@ module.exports = {
         if (req.isAuthenticated()) {
             return next();
         }   else {
-            res.redirect('/');
+            res.redirect('/login');
         }
     },
     ensureGuest: function (req, res, next) {
@@ -13,6 +13,8 @@ module.exports = {
             res.redirect('/dashboard') // Find out what dashboard is
         }
     },
+
+   
 
     //Admin Attempt
 

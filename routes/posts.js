@@ -5,10 +5,10 @@ const postsController = require('../controllers/posts');
 const { ensureAuth, ensureGuest } = require('../middleware/auth');
 
 //Simple Post Routes
-router.get('/:id', ensureAuth, postsController.getPost); //removed ensureAuth after id
+router.get('/:id', postsController.getPost); //removed ensureAuth after id
 
 router.post('/createPost', upload.single('file'), postsController.createPost);
-router.post('/createComment/:id', postsController.createComment) // maybe add ensureAuth
+router.post('/createComment/:id', ensureAuth, postsController.createComment) // maybe add ensureAuth
 
 router.put('/likePost/:id', postsController.likePost);
 
