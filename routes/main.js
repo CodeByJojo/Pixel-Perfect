@@ -19,7 +19,7 @@ router.post('/signup', authController.postSignup);
 //New
 
 // router.get('/pixel', ensureAuth, authController.getPixel)
-router.get('/pixel', postsController.getPixel); //removed ensureAuth after pixe
+router.get('/pixel', postsController.getPixel); //removed ensureAuth after pixel
 
 router.get('/editor', ensureAdmin, authController.getEditor)
 

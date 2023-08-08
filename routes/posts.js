@@ -8,7 +8,7 @@ const { ensureAuth, ensureGuest } = require('../middleware/auth');
 router.get('/:id', ensureAuth, postsController.getPost); //removed ensureAuth after id
 
 router.post('/createPost', upload.single('file'), postsController.createPost);
-router.post('/createComment/:id', postsController.createComment)
+router.post('/createComment/:id', postsController.createComment) // maybe add ensureAuth
 
 router.put('/likePost/:id', postsController.likePost);
 
