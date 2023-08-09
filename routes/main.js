@@ -21,6 +21,6 @@ router.post('/signup', authController.postSignup);
 // router.get('/pixel', ensureAuth, authController.getPixel)
 router.get('/pixel', postsController.getPixel); //removed ensureAuth after pixel
 
-router.get('/editor', ensureAdmin, authController.getEditor)
+router.get('/editor', ensureAdmin, editorController.getEditor) //changed from authController.getEditor
 
 module.exports = router;
