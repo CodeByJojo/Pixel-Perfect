@@ -81,7 +81,7 @@ a:hover {
   height: 5rem;
 }
 
-#PPTitle a{
+#PPTitle a, #PPTitle{
   font-family: 'Bebas Neue', cursive;
   color: #dc143c;
   font-size: 10rem;
@@ -275,6 +275,15 @@ form input {
   color: #000000;
   text-align: center;
   
+}
+
+input[type='file'] {
+  color: transparent;
+  border-radius: 0px;
+}
+
+#imageUpload button {
+  text-align: center;
 }
 
 
