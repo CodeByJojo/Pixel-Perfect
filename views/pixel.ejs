@@ -3,10 +3,26 @@
 <div id="thePage">
 
 	
+	
 		
      	   <h1 id="PPTitle"><a href='/pixel'>Pixel Perfect</a>
 		
-			
+			<nav class="navbar">
+				<ul>
+					
+						
+							<li><h2><a href="/">Index</a></h2></li>
+							<li><h2><a href="/profile">Profile</a></h2></li>
+							<li><h2><a href="/signup">Signup</a></h2></li>
+							<li><h2><a href="/login">Login</a></h2></li>
+	
+							<%if(user && user.userName && user.level == 'admin'){ %>
+								<li><h2><a href="/editor">Editor</a></h2></li>
+							  <%}%> 
+						
+					
+				</ul>
+			</nav>
 
 		</h1>
 		
@@ -44,7 +60,7 @@
 
 
 		<hr>
-			<div id='choice'>
+			<!-- <div id='choice'>
 				<div id="topChoice">
 					<img src="/resources/Pic1.jpg">
 					<img src="/resources/Pic2.jpg">
@@ -57,7 +73,7 @@
 					<img src="/resources/Pic6.jpg">
 				</div>
 				
-			</div>
+			</div> -->
 
 		<hr>
 		<ul>
