@@ -18,6 +18,17 @@
 							<%if(user && user.userName && user.level == 'admin'){ %>
 								<li><h2><a href="/editor">Editor</a></h2></li>
 							  <%}%> 
+
+							  <% if (user && user.userName && user.level == 'admin') { %>
+								<li id="userNameDisplay"> <%= user.userName %> | <%= user.level %> | <a href="/logout">
+									<button class="out" type="button">Logout</button>
+								</a></li>
+								
+								
+
+								<% } else { %>
+									<li id="userNameDisplay"> Welcome Guest </li>
+								<% } %>
 						
 					
 				</ul>
@@ -25,15 +36,7 @@
 
 		</h1>
 		
-		<% if (user && user.userName) { %>
-
-		<h2 id="userNameDisplay"> <%= user.userName %> | <%= user.level %> | <a href="/logout">
-			<button class="out" type="button">Logout</button>
-		</a></h2>
-
-		<% } else { %>
-			<h2 id="userNameDisplay"> Welcome Guest </h2>
-		<% } %>
+		
 
 		
 		<!-- <nav class="navbar">
