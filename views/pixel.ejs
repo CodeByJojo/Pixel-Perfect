@@ -9,7 +9,7 @@
 			<nav class="navbar">
 				<ul>
 					
-							<h1 id="PPTitle"><a href='/pixel'>Pixel Perfect</a>
+							<h1 id="PPTitle"><a href='/pixel'>Pixel Perfect</a></h1>
 							<li><h2><a href="/">Index</a></h2></li>
 							<li><h2><a href="/profile">Profile</a></h2></li>
 							<li><h2><a href="/signup">Signup</a></h2></li>
@@ -34,7 +34,7 @@
 				</ul>
 			</nav>
 
-		</h1>
+		
 		
 		
 
@@ -78,21 +78,24 @@
 			</div> -->
 
 		<hr>
-		<ul>
-			<% for(var i=0; i<posts.length; i++) {%>
-			  <li>
-				
-				<a href="/post/<%= posts[i]._id%>">
-					<h2 class="title"><%= posts[i].title%></h2>
+
+		<div id="postBlock">
+			<ul>
+				<% for(var i=0; i<posts.length; i++) {%>
+				<li>
 					
-				  <img class="img-fluid" src="<%= posts[i].image%>">
-				</a>
-				  <h2><%= posts[i].caption%></h2>
-				  <h2><%= `Written by ${posts[i].userName}`%></h2>
-				<hr>
-			  </li>
-			<% } %>
+					<a href="/post/<%= posts[i]._id%>">
+						<h2 class="title"><%= posts[i].title%></h2>
+						
+					<img class="img-fluid" src="<%= posts[i].image%>">
+					</a>
+					<h2><%= posts[i].caption%></h2>
+					<h2><%= `Written by ${posts[i].userName}`%></h2>
+					<hr>
+				</li>
+				<% } %>
 			</ul>
+		</div>
 		<!-- <hr> -->
 
 

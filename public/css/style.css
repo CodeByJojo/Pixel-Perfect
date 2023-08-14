@@ -34,8 +34,11 @@ html {
 /* LAYOUT
 /*******************************************/
 
-#PPTitle li {
-  display: inline-block;
+
+
+#postBlock {
+  display: flex;
+  
 }
 
 
@@ -45,6 +48,23 @@ html {
 /******************************************
 /* NAVBAR
 /*******************************************/
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+#PPTitle {
+  font-size: 3rem;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
 
 
 
