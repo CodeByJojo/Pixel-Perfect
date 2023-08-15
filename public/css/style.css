@@ -25,6 +25,23 @@ html {
 /* BASE STYLES
 /*******************************************/
 
+body {
+  background-color: rgb(27, 36, 48);
+}
+
+#postImg {
+  width: 50%;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  width: 60%;
+}
+
+
 
 
 
@@ -34,11 +51,28 @@ html {
 /* LAYOUT
 /*******************************************/
 
-
-
 #postBlock {
   display: flex;
-  
+  justify-content: center;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  color: aliceblue;
+}
+
+#postBlock {
+  text-align: center;
+  color: aliceblue;
 }
 
 
@@ -54,16 +88,26 @@ html {
   justify-content: center;
 }
 
-#PPTitle {
+#PPTitle, #PPTitle a {
   font-size: 3rem;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  color: #dc143c;
+  font-size: 10rem;
+  margin-bottom: -20px;
 }
 
-.navbar li {
+.navbar li, .navbar li a {
   display: inline-block;
+  padding: .5em;
+  font-size: 1.5rem;
+  color: aliceblue;
+  margin-top: -20px;
 }
 
-a {
-  text-decoration: none;
+#userNameDisplay {
+  color: rgb(0, 183, 255);;
+  font-size: 1.5rem;
 }
 
 
