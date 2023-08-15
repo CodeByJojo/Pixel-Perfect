@@ -41,7 +41,10 @@ hr {
   width: 60%;
 }
 
-
+.copyright {
+  color: aliceblue;
+  margin-left: .5rem;
+}
 
 
 
@@ -99,15 +102,20 @@ a {
 
 .navbar li, .navbar li a {
   display: inline-block;
-  padding: .5em;
-  font-size: 1.5rem;
+  padding: .3em;
+  font-size: 2rem;
   color: aliceblue;
   margin-top: -20px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.navbar li, .navbar li a:hover {
+  color: #dc143c;
 }
 
 #userNameDisplay {
   color: rgb(0, 183, 255);;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 

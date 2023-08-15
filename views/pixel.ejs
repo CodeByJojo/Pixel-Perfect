@@ -24,7 +24,7 @@
 							<%}%>
 
 							<%if(user && user.userName && user.level == 'admin') { %>
-								<li id="userNameDisplay"><%= user.userName %> | <%= user.level %></li>
+								<li id="userNameDisplay"><%=user.userName %>|<%= user.level%></li>
 							<%}%>
 
 							<%if(user && user.userName && user.level == 'base'){ %>
@@ -32,7 +32,7 @@
 							<%}%>
 
 							<%if(!user){ %>
-								<li id="userNameDisplay">Welcome Guest</li>
+								<li id="userNameDisplay">Guest</li>
 							<%}%>	
 						</ul>
 					</nav>
