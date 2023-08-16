@@ -43,7 +43,19 @@ hr {
 
 .copyright {
   color: aliceblue;
-  margin-left: .5rem;
+  margin-left: 1rem;
+}
+
+.PPAuthor {
+  font-size: 1rem;
+  color: aliceblue;
+  font-family: 'Roboto';
+  font-weight: 100;
+  margin-left: 40%;
+}
+
+.PPCaption {
+  font-size: 2.5rem;
 }
 
 
@@ -57,6 +69,10 @@ hr {
 #postBlock {
   display: flex;
   justify-content: center;
+  text-align: center;
+  color: aliceblue;
+  font-family: 'Roboto';
+  font-weight: 100;
 }
 
 ul {
@@ -71,12 +87,15 @@ a {
   text-align: center;
   font-size: 3rem;
   color: aliceblue;
+  font-family: 'Bebas Neue';
+  /* font-weight: 300; */
 }
 
 #postBlock {
-  text-align: center;
-  color: aliceblue;
+  
 }
+
+
 
 
 
@@ -89,6 +108,7 @@ a {
 .navbar {
   display: flex;
   justify-content: center;
+  margin-right: 10px;
 }
 
 #PPTitle, #PPTitle a {

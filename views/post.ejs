@@ -3,49 +3,62 @@
 
 
 <h1 id="PPTitle"><a href='/pixel'>Pixel Perfect</a></h1>
-
-        <h3>This is the Posts page</h3>
-
-        <hr>
-        <nav class="navbar">
-          <ul>
-            <li>
-              <a href="#" class="lock"><i class="fa-solid fa-caret-down icon-unlock fa-5x" style="color: #dc143c;"></i></a>
-              <ul>
-                <li><h2><a href="/">Index</a></h2></li>
+       
+            <nav class="navbar">
+              <ul>		
                 <li><h2><a href="/profile">Profile</a></h2></li>
                 <li><h2><a href="/signup">Signup</a></h2></li>
+
+                <%if(!user){ %>
                 <li><h2><a href="/login">Login</a></h2></li>
-    
+                <%}%>
+
+                <%if(user){ %>
+                  <li><h2><a href="/logout">Logout</a></h2></li>
+                <%}%> 
+
                 <%if(user && user.userName && user.level == 'admin'){ %>
                   <li><h2><a href="/editor">Editor</a></h2></li>
-                  <%}%> 
+                <%}%>
+
+                <%if(user && user.userName && user.level == 'admin') { %>
+                  <li id="userNameDisplay"><%=user.userName %>|<%= user.level%></li>
+                <%}%>
+
+                <%if(user && user.userName && user.level == 'base'){ %>
+                  <li id="userNameDisplay"><%= user.userName %></li>
+                <%}%>
+
+                <%if(!user){ %>
+                  <li id="userNameDisplay">Guest</li>
+                <%}%>	
               </ul>
-            </li>
-          </ul>
-        </nav>
+            </nav>
         
     
         <hr>
+        <div id="postBloc">
+		      <h2 class="title"><%= post.title %></h2>
+          
+          <img class="img-fluid" id="postImg" src="<%= post.image%>" />
+          <h2 class="PPAuthor">by <%= post.user.userName %></h2>
+          <h2 class="PPCaption"><%= post.caption %></p>
+        </div>
 
-		<h2 class="postTitle"><%= post.title %></h2>
-    <p class="author">by <%= post.user.userName %></p>
-      <img class="img-fluid" src="<%= post.image%>" />
-      <p class="postCaption"><%= post.caption %></p>
 
-      <div class="row justify-content-between">
+        
+
+
+
+
+      
         <form
           class="col-1"
           action="/post/likePost/<%= post.id %>?_method=PUT"
           method="POST">
-
-        
           <button class="btn btn-primary fa fa-heart" type="submit"> <%=post.likes%></button>
-
-          </form> 
-
-         
-        </div>
+        </form> 
+      
       
 
 
