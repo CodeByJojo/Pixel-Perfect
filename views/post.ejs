@@ -47,6 +47,42 @@
 	</ul>
 </div>
 
+<form id="likeBtn" action="/post/likePost/<%= post.id %>?_method=PUT" method="POST">
+	<button class="btn btn-primary fa fa-heart" type="submit"> <%=post.likes%></button>
+</form> 
+
+<hr>
+
+<form action="/post/createComment/<%= post.id %>" method="POST">
+	<label for="caption" class="form-label">Comment</label>
+	<textarea class="form-control" id="text" name="text"></textarea>
+	<button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+</form>
+
+<hr>
+
+<h1>Comments</h1>
+<ul>
+	<% for(var i=0; i<post.comments.length; i++) {%>
+	<li>
+		<h2 class="userName"> <%= post.comments[i].userName%>:</h2>
+		<h2 class="comment"><%=post.comments[i].text%></h2>
+
+		<%if(post.comments[i].userName == user.userName){ %>
+		<form
+		action="/post/deleteComment/<%= post.comments[i].id %>?_method=DELETE"
+		method="POST"
+		class="col-3" >
+
+		<button class="btn btn-primary fa fa-trash" type="submit"></button>
+		</form>
+		<%}%>
+		<hr>
+	</li>
+	<% } %>
+</ul>
+<hr>
+
 
         
 

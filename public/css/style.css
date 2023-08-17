@@ -67,8 +67,6 @@ hr {
 /*******************************************/
 
 #postBlock {
-  display: flex;
-  justify-content: center;
   text-align: center;
   color: aliceblue;
   font-family: 'Roboto';
@@ -88,7 +86,15 @@ a {
   font-size: 3rem;
   color: aliceblue;
   font-family: 'Bebas Neue';
-  /* font-weight: 300; */
+}
+
+#likeBtn {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#likeBtn button {
+  border-radius: 5px;
 }
 
 
