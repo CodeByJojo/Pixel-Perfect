@@ -58,6 +58,22 @@ hr {
   font-size: 2.5rem;
 }
 
+.styleFont {
+  color: aliceblue;
+  font-family: 'Bebas Neue';
+  text-align: center;
+  font-size: 4rem;
+}
+
+#commentHr {
+  width: 95%;
+}
+
+.comment span {
+  color: rgb(0, 183, 255);
+  margin-right: 1rem;
+}
+
 
 
 
@@ -96,19 +112,44 @@ a {
 
 #commentText {
   width: 40rem;
-  height: 20rem;
+  height: 15rem;
   font-size: 2rem;
   text-indent: .5rem;
+  border-radius: 15px;
 }
 
 #commentDiv {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 #commentDiv button {
   display: block;
+  margin-left: 80%;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  padding: 1px 3px;
+  font-family: 'Bebas Neue';
+}
+
+#commentSectionDiv {
+  background-color: rgb(46, 61, 81);
+  display: flex;
   justify-content: center;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 15px;
+  color: aliceblue;
+}
+
+#commentSectionDiv .userName {
+  color: #dc143c;
+  margin-left: -60%;
+}
+
+#commentSectionDiv button {
+  margin-left: 3rem;
 }
 
 
@@ -152,7 +193,7 @@ a {
 }
 
 #userNameDisplay {
-  color: rgb(0, 183, 255);;
+  color: rgb(0, 183, 255);
   font-size: 2rem;
 }
 
