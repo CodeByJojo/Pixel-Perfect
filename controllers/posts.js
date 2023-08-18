@@ -25,6 +25,7 @@ module.exports = {
         try { 
             const post = await Post.findById(req.params.id).populate('comments').populate('user');
             const user = req.user;
+            
         
         if(req.session){
             res.render('post.ejs', { post: post, user: user});

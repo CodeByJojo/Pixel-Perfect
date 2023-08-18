@@ -43,7 +43,7 @@ hr {
 
 .copyright {
   color: aliceblue;
-  margin-left: 1rem;
+  margin-left: 20.5%
 }
 
 .PPAuthor {
@@ -150,6 +150,25 @@ a {
 
 #commentSectionDiv button {
   margin-left: 3rem;
+}
+
+.signupForm input {
+  text-align: center;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+  padding: .5rem .5rem;
+}
+
+.signupForm {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.signupForm button {
+  font-family: 'Bebas Neue';
+  padding: .5rem 1.5rem;
+  border-radius: 1rem;
 }
 
 
