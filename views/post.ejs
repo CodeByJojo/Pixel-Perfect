@@ -62,7 +62,7 @@
 			<h2 class="comment"><span><%= post.comments[i].userName%>: </span><%=post.comments[i].text%>
 			</h2>
 
-			<%if(post.comments[i].userName == user.userName){ %>
+			<%if(post.comments && post.comments[i].user == user.id){ %>
 			<form action="/post/deleteComment/<%= post.comments[i].id %>?_method=DELETE" method="POST" class="col-3">
 				<button title="Delete Comment" class="btn btn-primary fa fa-trash" type="submit"></button>
 			</form>
@@ -72,6 +72,8 @@
 		<% } %>
 	</ul>
 </div>
+
+
 
 <div id="commentDiv">
 	<form id="commentForm" action="/post/createComment/<%= post.id %>" method="POST">
