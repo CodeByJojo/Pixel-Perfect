@@ -1,83 +1,60 @@
 <%- include('partials/header') -%>
-
-<div id="thePage">
-
 	
+<h1 id="PPTitle"><a href='/pixel'>Pixel Perfect</a></h1>
 		
-     	   <h1 id="PPTitle"><a href='/pixel'>Pixel Perfect</a>
-		
+<nav class="navbar">
+	<ul>		
+		<li><h2><a href="/profile">Profile</a></h2></li>
+		<li><h2><a href="/signup">Signup</a></h2></li>
 
-		</h1>
-		
-		<% if (user && user.userName) { %>
+		<%if(!user){ %>
+		<li><h2><a href="/login">Login</a></h2></li>
+		<%}%>
 
-		<h2 id="userNameDisplay"> <%= user.userName %> | <%= user.level %> | <a href="/logout">
-			<button class="out" type="button">Logout</button>
-		</a></h2>
+		<%if(user){ %>
+		<li><h2><a href="/logout">Logout</a></h2></li>
+		<%}%> 
 
-		<% } else { %>
-			<h2 id="userNameDisplay"> Welcome Guest </h2>
+		<%if(user && user.userName && user.level == 'admin'){ %>
+		<li><h2><a href="/editor">Editor</a></h2></li>
+		<%}%>
+
+		<%if(user && user.userName && user.level == 'admin') { %>
+		<li id="userNameDisplay"><%=user.userName %>|<%= user.level%></li>
+		<%}%>
+
+		<%if(user && user.userName && user.level == 'base'){ %>
+		<li id="userNameDisplay"><%= user.userName %></li>
+		<%}%>
+
+		<%if(!user){ %>
+		<li id="userNameDisplay">Guest</li>
+		<%}%>	
+	</ul>
+</nav>
+
+<hr>
+<hr>
+
+<div id="postBlock">
+	<ul>
+		<% for(var i=0; i<posts.length; i++) {%>
+		<li>	
+		<a href="/post/<%= posts[i]._id%>">
+		<h2 class="title"><%= posts[i].title%></h2>	
+		<img id="postImg" src="<%= posts[i].image%>">
+		</a>
+		<h2 class="PPAuthor"><%= `Written by ${posts[i].userName}`%></h2>
+		<h2 class="PPCaption"><%= posts[i].caption%></h2>
+		<hr>
+		</li>
 		<% } %>
+	</ul>
+</div>
 
-		
-		<nav class="navbar">
-			<ul>
-				<li>
-					<a href="#" class="lock"><i class="fa-solid fa-caret-down icon-unlock fa-5x" style="color: #dc143c;"></i></a>
-					<ul>
-						<li><h2><a href="/">Index</a></h2></li>
-						<li><h2><a href="/profile">Profile</a></h2></li>
-						<li><h2><a href="/signup">Signup</a></h2></li>
-						<li><h2><a href="/login">Login</a></h2></li>
-
-						<%if(user && user.userName && user.level == 'admin'){ %>
-							<li><h2><a href="/editor">Editor</a></h2></li>
-						  <%}%> 
-					</ul>
-				</li>
-			</ul>
-		</nav>
-
-
-
-
-
-		<hr>
-			<div id='choice'>
-				<div id="topChoice">
-					<img src="/resources/Pic1.jpg">
-					<img src="/resources/Pic2.jpg">
-					<img src="/resources/Pic3.jpg">
-				</div>
-
-				<div id="botChoice">
-					<img src="/resources/Pic4.jfif">
-					<img src="/resources/Pic5.jfif">
-					<img src="/resources/Pic6.jpg">
-				</div>
-				
-			</div>
-
-		<hr>
-		<ul>
-			<% for(var i=0; i<posts.length; i++) {%>
-			  <li>
-				
-				<a href="/post/<%= posts[i]._id%>">
-					<h2 class="title"><%= posts[i].title%></h2>
-					
-				  <img class="img-fluid" src="<%= posts[i].image%>">
-				</a>
-				  <h2><%= posts[i].caption%></h2>
-				  <h2><%= `Written by ${posts[i].userName}`%></h2>
-				<hr>
-			  </li>
-			<% } %>
-			</ul>
-		<!-- <hr> -->
 
 
 	
-	</div>
+	
 	 	
 <%- include('partials/footer') -%>
