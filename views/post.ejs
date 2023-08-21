@@ -56,13 +56,13 @@
 <h1 class="styleFont">Comments</h1>
 <div id="commentSectionDiv">
 	<ul>
-		<% for(var i=0; i<post.comments.length; i++) {%>
+		<% for(var i=0; i<post.comments.length; i++) { %>
 		<li>
 			<h2 class="userName"></h2>
 			<h2 class="comment"><span><%= post.comments[i].userName%>: </span><%=post.comments[i].text%>
 			</h2>
 
-			<%if(post.comments  && post.comments[i].user == user.id){ %>
+			<%if(user && post.comments[i].user == user.id){ %>
 			<form action="/post/deleteComment/<%= post.comments[i].id %>?_method=DELETE" method="POST" class="col-3">
 				<button title="Delete Comment" class="btn btn-primary fa fa-trash" type="submit"></button>
 			</form>
