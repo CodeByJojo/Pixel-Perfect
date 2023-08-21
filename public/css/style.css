@@ -233,8 +233,42 @@ a {
 /* MEDIA QUERIES
 /*******************************************/
 
-@media screen and (max-width: 1400px) {
-  #PPTitle a {
-    color: crimson;
+@media screen and (max-width: 700px) {
+  #PPTitle, #PPTitle a {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: #1457dc;
+    font-size: 5rem;
+    margin-bottom: -20px;
   }
+
+  .navbar li, .navbar li a {
+    display: inline-block;
+    padding: .1em;
+    font-size: 1.5rem;
+    color: aliceblue;
+    margin-top: -20px;
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  #userNameDisplay {
+    color: rgb(0, 183, 255);
+    font-size: 1.5rem;
+  }
+
+  .PPAuthor {
+    font-size: .8rem;
+    color: aliceblue;
+    font-family: 'Roboto';
+    font-weight: 100;
+    margin-left: 35%;
+  }
+
+  .PPCaption, p {
+    font-size: 2.5rem;
+    margin: 0 auto;
+    max-width: 100px;
+  }
+
+
 }
