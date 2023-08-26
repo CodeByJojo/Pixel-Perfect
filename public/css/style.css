@@ -162,7 +162,8 @@ a {
 
 .signupForm, #editorTitle{
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
+  width: 30%;
 }
 
 .signupForm button, #editorBlock button {
@@ -178,7 +179,10 @@ a {
 #editorCaption {
   width: 50%;
   height: 40rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
+  text-indent: 6px;
+  line-height: 30px;
+  font-size: 2rem;
 }
 
 #editorBlock button {
