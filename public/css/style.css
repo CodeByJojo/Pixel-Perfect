@@ -185,6 +185,13 @@ a {
   font-size: 4rem;
 }
 
+#imgUploadDiv input {
+  font-size: 2rem;
+  color: aliceblue;
+  margin-left: -25%;
+  border-radius: 1rem;
+  margin-bottom: -10px;
+}
 
 
 
