@@ -5,8 +5,11 @@ function turnGreen() {
     console.log('Greenified')
 }
 
-
-const num = [1, 2, 3]
+// tinyEditor
+tinymce.init({
+    selector: 'textarea#tinyMce',
+    plugins: 'lists link image table code help wordcount'
+  });
 
 
 

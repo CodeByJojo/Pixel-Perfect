@@ -176,14 +176,14 @@ a {
  text-align: center;
 }
 
-#editorCaption {
+/* .editorCaption {
   width: 50%;
   height: 40rem;
   border-radius: 1rem;
   text-indent: 6px;
   line-height: 30px;
   font-size: 2rem;
-}
+} */
 
 #editorBlock button {
   font-size: 4rem;

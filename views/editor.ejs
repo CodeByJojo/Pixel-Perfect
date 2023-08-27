@@ -34,44 +34,48 @@
 </nav>
 <hr>
 
-	<div id="editorBlock">
-		<form id="editorForm" action="/post/createPost" enctype="multipart/form-data" method="POST">
+<div id="editorBlock">
+	<form id="editorForm" action="/post/createPost" enctype="multipart/form-data" method="POST">
 
-			<label for="title" class="form-label"></label>
-            <input type="text" class="form-control signupForm" id="editorTitle" name="title" placeholder="Title">
+		<label for="title" class="form-label"></label>
+		<input type="text" class="form-control signupForm" id="editorTitle" name="title" placeholder="Title">
 
-			<br>
+		<br>
 
-			<label for="caption" class="form-label"></label>
-            <textarea class="form-control" id="editorCaption" name="caption"></textarea>
+		<label for="caption" class="form-label"></label>
+		<textarea id="tinyMce" class="editorCaption" name="caption">Hello, World!</textarea>
 
-			<br>
+		<br>
 
-			<!-- <label for="imgUpload" class="form-label"></label> -->
-			<div id="imgUploadDiv">
-            	<input type="file" class="form-control" id="imageUpload" name="file">
-			</div>
-			<br>
+		<div id="imgUploadDiv">
+			<input type="file" class="form-control" id="imageUpload" name="file">
+		</div>
 
-			<button type="submit" class="btn btn-primary" value="Upload">Submit</button>
-		</form>
-	</div>
+		<br>
 
-		<hr>
+		<button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+	</form>
+</div>
 
-		<hr>
-
-		
+<hr>
+<hr>
 
 
-		
-		<footer id="footer">
-			<p class="copyright">&copy; Code by Jojo.</p>
-		</footer>
-		
-		<%= console.log('Sup') %>
-		
-		  
-		<script type="text/javascript" src="js/main.js"></script>
-		</body>
-		</html>
+
+
+
+<footer id="footer">
+<p class="copyright">&copy; Code by Jojo.</p>
+</footer>
+
+<%= console.log('Sup') %>
+
+
+<script type="text/javascript" src="js/main.js"></script>
+<!-- Script element sourcing TinyMCE -->
+<script type="application/javascript" src= "/tinymce/tinymce.min.js"></script>
+<!-- Script element sourcing the TinyMCE configuration -->
+<script type="application/javascript" src= "js/main.js"></script>
+
+</body>
+</html>

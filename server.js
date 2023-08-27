@@ -11,6 +11,8 @@ const connectDB = require('./config/database');
 const mainRoutes = require('./routes/main');
 const postRoutes = require('./routes/posts');
 
+const path = require('path');
+
 require('dotenv').config({ path: './config/.env'});
 
 require('./config/passport')(passport);
@@ -20,6 +22,9 @@ connectDB();
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
+
+//tinyEditor
+app.use('/tinymce', express.static(path.join(__dirname, 'node_modules', 'tinymce')));
 
 
 
@@ -57,4 +62,3 @@ app.listen(process.env.PORT, () => {
     console.log('Itsa Runnin!');
 }); 
 
-//this
