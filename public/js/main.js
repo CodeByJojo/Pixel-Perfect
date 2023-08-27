@@ -8,7 +8,9 @@ function turnGreen() {
 // tinyEditor
 tinymce.init({
     selector: 'textarea#tinyMce',
-    plugins: 'lists link image table code help wordcount'
+    plugins: 'lists link image table code help wordcount',
+    width: 1000,
+    height: 500,
   });
 
 

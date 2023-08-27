@@ -45,7 +45,7 @@
 		<img id="postImg" src="<%= posts[i].image%>">
 		</a>
 		<h2 class="PPAuthor"><%= `Written by ${posts[i].userName}`%></h2>
-		<h2 class="PPCaption"><%= posts[i].caption%></h2>
+		<h2 class="PPCaption"><%- posts[i].caption%></h2>
 		<hr>
 		</li>
 		<% } %>

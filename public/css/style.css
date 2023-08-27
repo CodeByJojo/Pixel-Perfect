@@ -56,6 +56,9 @@ hr {
 
 .PPCaption {
   font-size: 2.5rem;
+  border: solid red 1px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .styleFont {
@@ -166,7 +169,7 @@ a {
   width: 30%;
 }
 
-.signupForm button, #editorBlock button {
+.signupForm button, #editorBlock .btn {
   font-family: 'Bebas Neue';
   padding: .5rem 1.5rem;
   border-radius: 1rem;
@@ -185,16 +188,22 @@ a {
   font-size: 2rem;
 } */
 
-#editorBlock button {
+#editorBlock .btn {
   font-size: 4rem;
 }
 
-#imgUploadDiv input {
+#imgUploadDiv input, #imageUpload {
   font-size: 2rem;
   color: aliceblue;
-  margin-left: -25%;
-  border-radius: 1rem;
+  margin-left: -40%;
+  border-radius: 20rem;
   margin-bottom: -10px;
+}
+
+#mceContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -15px;
 }
 
 
