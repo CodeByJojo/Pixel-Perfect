@@ -90,7 +90,6 @@ hr {
   color: aliceblue;
   font-family: 'Roboto';
   font-weight: 100;
-
 }
 
 ul {
@@ -177,18 +176,15 @@ a {
   border-radius: 1rem;
 }
 
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 #editorBlock {
  text-align: center;
 }
-
-/* .editorCaption {
-  width: 50%;
-  height: 40rem;
-  border-radius: 1rem;
-  text-indent: 6px;
-  line-height: 30px;
-  font-size: 2rem;
-} */
 
 #editorBlock .btn {
   font-size: 4rem;
@@ -207,6 +203,8 @@ a {
   justify-content: center;
   margin-bottom: -15px;
 }
+
+
 
 
 
