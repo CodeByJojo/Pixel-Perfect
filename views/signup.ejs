@@ -2,45 +2,45 @@
 
 
 <h1 id="PPTitle"><a href='/pixel'>Pixel Perfect</a></h1>
-        <h1 class="styleFont">Signup</h1>
+<h1 class="styleFont">Signup</h1>
 
-		<hr>
+<hr>
 
-		<% if (locals.messages.errors) { %>
-			<% messages.errors.forEach( el => { %>
-				<div class="alert alert-danger"><%= el.msg %></div>
+<% if (locals.messages.errors) { %>
+	<% messages.errors.forEach( el => { %>
+		<div class="alert alert-danger"><%= el.msg %></div>
 			<% }) %>    
-		<% } %>
-		<% if (locals.messages.info) { %>
+			<% } %>
+			<% if (locals.messages.info) { %>
 			<% messages.info.forEach( el => { %>
-				<div class="alert alert-info"><%= el.msg %></div>
-			<% }) %>    
-		<% } %>
+	<div class="alert alert-info"><%= el.msg %></div>
+	<% }) %>    
+<% } %>
 
-		<hr>
-		
-		<form class="signupForm" action="/signup" method="POST">
-			<div class="mb-3">
-				<label for="userName" class="form-label"></label>
-				<input placeholder="Username" type="text" class="form-control" id="userName" name="userName">
-			  </div>
-			<div class="mb-3">
-			  <label for="exampleInputEmail1" class="form-label"></label>
-			  <input placeholder="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
-			  <div id="emailHelp" class="form-text"></div>
-			</div>
-			<div class="mb-3">
-			  <label for="password" class="form-label"></label>
-			  <input placeholder="Password" type="password" class="form-control" id="password" name="password">
-			</div>
-			<div class="mb-3">
-				<label for="confirmPassword" class="form-label"></label>
-				<input placeholder="Confirm Passsword" type="password" class="form-control" id="confirmPassword" name="confirmPassword">
-			  </div>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		  </form>
+<hr>
 
-		<hr>
+<form class="signupForm" action="/signup" method="POST">
+	<div class="mb-3">
+		<label for="userName" class="form-label"></label>
+		<input placeholder="Username" type="text" class="form-control" id="userName" name="userName">
+	</div>
+	<div class="mb-3">
+		<label for="exampleInputEmail1" class="form-label"></label>
+		<input placeholder="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+		<div id="emailHelp" class="form-text"></div>
+	</div>
+	<div class="mb-3">
+		<label for="password" class="form-label"></label>
+		<input placeholder="Password" type="password" class="form-control" id="password" name="password">
+	</div>
+	<div class="mb-3">
+		<label for="confirmPassword" class="form-label"></label>
+		<input placeholder="Confirm Passsword" type="password" class="form-control" id="confirmPassword" name="confirmPassword">
+	</div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<hr>
 
 
 		
