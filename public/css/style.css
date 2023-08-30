@@ -303,5 +303,20 @@ a {
     max-width: 100%;
   } 
 
+  .signupForm {
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+  }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+  .signupForm {
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+  }
 
 }
