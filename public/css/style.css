@@ -298,9 +298,9 @@ a {
   }
 
   .PPCaption, p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0 auto;
-    max-width: 100px;
+    max-width: 100%;
   } 
 
 
