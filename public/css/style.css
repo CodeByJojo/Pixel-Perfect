@@ -193,7 +193,7 @@ a {
 #imgUploadDiv input, #imageUpload {
   font-size: 2rem;
   color: aliceblue;
-  margin-left: -40%;
+  margin-left: -60rem;
   border-radius: 20rem;
   margin-bottom: -10px;
 }
@@ -266,6 +266,11 @@ a {
 /* MEDIA QUERIES
 /*******************************************/
 
+@media screen and (min-width: 1700px) {
+ 
+    
+}
+
 @media screen and (max-width: 700px) {
   #PPTitle, #PPTitle a {
     text-align: center;
@@ -318,4 +323,5 @@ a {
     width: 100%;
   }
 
+  
 }
