@@ -21,6 +21,10 @@ html {
   font-size: 62.5%;
 }
 
+/* * {
+  border: crimson solid 1px;
+} */
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -338,6 +342,14 @@ a {
 
 @media screen and (max-width: 400px) {
   .title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
+
+  #commentDiv textarea  {
+    width: 300px;
+  }
+
+  
+
+  
   }
