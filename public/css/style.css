@@ -313,6 +313,10 @@ a {
     width: 85%;
   }
 
+  .title {
+    font-size: 4rem;
+  }
+
   .signupForm {
     text-align: center;
     font-size: 3rem;
@@ -331,3 +335,9 @@ a {
 
   
 }
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 3rem;
+  }
+  }
