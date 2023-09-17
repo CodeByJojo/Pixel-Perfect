@@ -56,7 +56,7 @@ hr {
 
 .PPCaption {
   font-size: 2rem;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   font-family: 'Raleway', sans-serif;
 }
@@ -204,6 +204,10 @@ a {
   margin-bottom: -15px;
 }
 
+.cmntSub {
+  margin-top: 5px;
+}
+
 
 
 
@@ -303,9 +307,11 @@ a {
 
   .PPCaption, p {
     font-size: 2rem;
-    margin: 0 auto;
-    max-width: 100%;
   } 
+
+  .PPCaption {
+    width: 85%;
+  }
 
   .signupForm {
     text-align: center;
