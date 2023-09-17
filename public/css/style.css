@@ -327,6 +327,15 @@ a {
     width: 100%;
   }
 
+  #postImg {
+    width: 80%;
+  }
+
+  .copyright {
+    text-align: center;
+    margin: 50px 0;
+  }
+
 
 }
 
