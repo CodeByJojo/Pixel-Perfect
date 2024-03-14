@@ -37,16 +37,18 @@
 
 <hr>
 <hr>
-  
-<div id="postBlock">
-	<ul> 
-		<li>
-		<h2 class="title"><%= post.title%></h2> 
-		<img id="postImg" src="<%= post.image%>">
-		<h2 class="PPAuthor"><%= `Written by ${post.user.userName}`%></h2>
-		<h2 class="PPCaption"><%- post.caption%></h2>
-		</li>
-	</ul>
+
+<div id="allPost">
+	<div id="postBlock">
+		<ul> 
+			<li>
+			<h2 class="title"><%= post.title%></h2> 
+			<img id="postImg" src="<%= post.image%>">
+			<h2 class="PPAuthor"><%= `Written by ${post.user.userName}`%></h2>
+			<h2 class="PPCaption"><%- post.caption%></h2>
+			</li>
+		</ul>
+	</div>
 </div>
 
 <form id="likeBtn" action="/post/likePost/<%= post.id %>?_method=PUT" method="POST">
