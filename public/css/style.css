@@ -96,22 +96,27 @@ hr {
 
 /* GLASS EFFECT BELOW */
 
-#postBlock {
+#postBlock, #likeDiv {
   background-color: #ffffff05;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(55px);
   border-radius: 50px;
-  width: 50%;
+  min-width: 50%;
   margin-top: 20px;
   border-top: 2px;
   display: flex;
   justify-content: center;
 }
 
-#allPost {
+#allPost, #likeDiv {
   display: flex;
   justify-content: center;
 }
+
+/* #likeDiv {
+  display: flex;
+  justify-content:right;
+} */
 
 
 /* -----------------------

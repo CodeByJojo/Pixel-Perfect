@@ -51,9 +51,13 @@
 	</div>
 </div>
 
-<form id="likeBtn" action="/post/likePost/<%= post.id %>?_method=PUT" method="POST">
-	<button class="btn btn-primary fa fa-heart" type="submit"> <%=post.likes%></button>
-</form> 
+<div id="allPost">
+	<div id="likeDiv">
+		<form id="likeBtn" action="/post/likePost/<%= post.id %>?_method=PUT" method="POST">
+			<button class="btn btn-primary fa fa-heart" type="submit"> <%=post.likes%></button>
+		</form> 
+	</div>
+</div>
 
 <hr>
 
