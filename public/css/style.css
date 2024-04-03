@@ -34,7 +34,7 @@ body {
 }
 
 #postImg {
-  width: 50%;
+  width: 60%;
 }
 
 li {
@@ -60,9 +60,10 @@ hr {
 
 .PPCaption {
   font-size: 2rem;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   font-family: 'Raleway', sans-serif;
+  
 }
 
 .styleFont {
@@ -96,7 +97,7 @@ hr {
 
 /* GLASS EFFECT BELOW */
 
-#postBlock, #likeDiv {
+/* #postBlock, #likeDiv {
   background-color: #ffffff05;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(55px);
@@ -106,11 +107,12 @@ hr {
   border-top: 2px;
   display: flex;
   justify-content: center;
-}
+} */
 
 #allPost, #likeDiv {
   display: flex;
   justify-content: center;
+  
 }
 
 /* #likeDiv {
@@ -136,6 +138,7 @@ a {
   color: aliceblue;
   font-family: 'Bebas Neue';
   margin-bottom: 1px;
+  margin-top: 15px;
 }
 
 #likeBtn, #likeBtn button {
@@ -280,6 +283,151 @@ a {
 /******************************************
 /* EXP.
 /*******************************************/
+
+
+/******************************************
+/* GLASS 
+/*******************************************/
+
+
+body {
+  /* background: linear-gradient(45deg, rgb(27, 36, 48), rgb(42, 56, 75)); */
+  height: 100vh;
+}
+
+.glassForm {
+  background: rgba(255, 255, 255, 0.077);
+  /* padding: 3em; */
+  height: 270px;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  width: 400px;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.glassForm2 {
+  height: 370px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.486);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(255, 255, 255, 0);
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  padding: 5px;
+  width: 200px;
+  font-size: 2rem;
+}
+
+#commentSectionDiv2 {
+  background: rgba(255, 255, 255, 0.034);
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.486);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(255, 255, 255, 0);
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  padding: 5px;
+  width: 80%;
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+
+::placeholder {
+  color: white;
+}
+
+.subBtn {
+  width: 20%;
+  border-radius: 25px;
+}
+
+#newLikeBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+
+
+#postBlock li{
+  background: rgba(255, 255, 255, 0.049);
+  /* padding: 3em; */
+  /* height: 300px; */
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+#postBlock {
+  width: 80%;
+}
+
+/* a {
+  text-decoration: none;
+  color: white;
+  font-size: .8rem;
+} */
+
+/* .forgot {
+  padding: 3px;
+  margin-bottom: 5rem;
+} */
+
+
+/* .container {
+  display: flex;
+  justify-content: center;
+} */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: white;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

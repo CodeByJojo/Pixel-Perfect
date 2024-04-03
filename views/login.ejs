@@ -1,7 +1,7 @@
 <%- include('partials/header') -%>
 
 <h1 id="PPTitle"><a href='/pixel'>Pixel Perfect</a></h1>
-<h1 class="styleFont">Login</h1>
+
 
 <hr>  
 
@@ -13,30 +13,29 @@
 	messages.info.forEach( el => { %>
 	<div class="alert alert-info"><%= el.msg %></div>
 	<% }) %> <% } %>
-	<form class="signupForm" action="/login" method="POST">
-		<div class="mb-3">
+	<form class="signupForm glassForm" action="/login" method="POST">
+		
 			<label for="exampleInputEmail1" class="form-label"
 			></label>
+			<h1 class="styleFont">Login</h1>
 			<input
 				type="email"
-				class="form-control"
+				class="form-control box"
 				id="exampleInputEmail1"
 				aria-describedby="emailHelp"
 				name="email"
 				placeholder="Email"
-			/>
-		</div>
-		<div class="mb-3">
+			/> <br />
+		
 			<label for="exampleInputPassword1" class="form-label"></label>
 			<input
 				type="password"
-				class="form-control"
+				class="form-control box"
 				id="exampleInputPassword1"
 				name="password"
 				placeholder="Password"
-			/>
-		</div>
-		<button type="submit" class="btn btn-primary">Submit</button>
+			/> <br />
+		<button type="submit" class="btn btn-primary box subBtn">Submit</button>
 	</form>
 </div>
 

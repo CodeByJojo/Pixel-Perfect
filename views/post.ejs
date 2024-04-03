@@ -36,33 +36,37 @@
 </nav>
 
 <hr>
-<hr>
 
 <div id="allPost">
 	<div id="postBlock">
 		<ul> 
 			<li>
 			<h2 class="title"><%= post.title%></h2> 
+			<br>
 			<img id="postImg" src="<%= post.image%>">
 			<h2 class="PPAuthor"><%= `Written by ${post.user.userName}`%></h2>
 			<h2 class="PPCaption"><%- post.caption%></h2>
+			<br>
+
+			<div id="newLikeBtn">
+				<div>
+					<form action="/post/likePost/<%= post.id %>?_method=PUT" method="POST">
+						<button class="btn btn-primary fa fa-heart" type="submit"> <%=post.likes%></button>
+					</form> 
+				</div>
+			</div>
+			<br>
+
 			</li>
 		</ul>
 	</div>
 </div>
 
-<div id="allPost">
-	<div id="likeDiv">
-		<form id="likeBtn" action="/post/likePost/<%= post.id %>?_method=PUT" method="POST">
-			<button class="btn btn-primary fa fa-heart" type="submit"> <%=post.likes%></button>
-		</form> 
-	</div>
-</div>
 
 <hr>
 
 <h1 class="styleFont">Comments</h1>
-<div id="commentSectionDiv">
+<div id="commentSectionDiv2" class='box'>
 	<ul>
 		<% for(var i=0; i<post.comments.length; i++) { %>
 		<li>
@@ -75,7 +79,7 @@
 				<button title="Delete Comment" class="btn btn-primary fa fa-trash" type="submit"></button>
 			</form>
 			<%}%>
-			<hr id="commentHr">
+			<!-- <hr id="commentHr"> -->
 		</li>
 		<% } %>
 	</ul>
