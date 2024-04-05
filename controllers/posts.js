@@ -94,7 +94,7 @@ module.exports = {
                 }
             );
             console.log('Likes +1');
-            res.redirect(`/post/${req.params.id}`);
+            res.redirect(`/post/${req.params.id}#newLikeBtn`);
         } catch (err) {
             console.log(err)
         }

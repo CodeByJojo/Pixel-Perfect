@@ -155,13 +155,13 @@ a {
   border-radius: 15px;
 }
 
-#commentDiv {
+#commentCreateDiv {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
 
-#commentDiv button {
+#commentCreateDiv button {
   display: block;
   margin-left: 80%;
   font-size: 2.5rem;
@@ -180,9 +180,8 @@ a {
   color: aliceblue;
 }
 
-#commentSectionDiv .userName {
+#commentSectionDiv2 .userName {
   color: #dc143c;
-  margin-left: -60%;
 }
 
 #commentSectionDiv button {
@@ -333,24 +332,33 @@ body {
 }
 
 #commentSectionDiv2 {
-  background: rgba(255, 255, 255, 0.034);
+  background: rgba(255, 255, 255, 0.077);
+  /* padding: 3em; */
+  /* height: 270px; */
   border-radius: 20px;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.486);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
-  box-shadow: 20px 20px 40px -6px rgba(255, 255, 255, 0);
-  text-align: center;
-  margin-top: 10px;
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  width: 400px;
   color: white;
-  padding: 5px;
-  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
   font-size: 1.5rem;
-
   display: flex;
   justify-content: center;
-  width: 40%;
-  margin: 0 auto;
+  width: 30%;
+  margin: 10px auto;
   border-radius: 15px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#commentSectionDiv2 .comment {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
@@ -497,6 +505,7 @@ button:focus {
   .copyright {
     text-align: center;
     margin: 50px 0;
+    padding-bottom: 20px;
   }
 }
 
@@ -504,16 +513,46 @@ button:focus {
   .signupForm {
     text-align: center;
     font-size: 3rem;
-    width: 100%;
+    width: 80%;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   .title {
     font-size: 2rem;
   }
 
-  #commentDiv textarea  {
+  .subBtn {
+    width: 40%;
+  }
+
+  #commentCreateDiv textarea  {
     width: 300px;
+  }
+
+  hr {
+    color: skyblue;
+    margin-top: 20px;
+  }
+
+  #commentSectionDiv2 {
+    width: 85%;
+  }
+
+  #postBlock {
+    width: 90%;
+  }
+
+  #PPTitle a {
+    font-size: 6rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .navbar ul a, #userNameDisplay {
+    font-size: 3rem;
+    margin-top: 10px;
   }
 }

@@ -66,10 +66,10 @@
 <hr>
 
 <h1 class="styleFont">Comments</h1>
-<div id="commentSectionDiv2" class='box'>
-	<ul>
+<div >
+	<ul >
 		<% for(var i=0; i<post.comments.length; i++) { %>
-		<li>
+		<li id="commentSectionDiv2">
 			<h2 class="userName"></h2>
 			<h2 class="comment"><span><%= post.comments[i].userName%>: </span><%=post.comments[i].text%>
 			</h2>
@@ -87,7 +87,7 @@
 
 
 
-<div id="commentDiv">
+<div id="commentCreateDiv">
 	<form id="commentForm" action="/post/createComment/<%= post.id %>" method="POST">
 		<label for="caption" class="form-label"></label>
 		<textarea placeholder="Comment" class="form-control" id="commentText" name="text"></textarea>
