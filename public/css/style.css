@@ -513,11 +513,28 @@ button:focus {
   .signupForm {
     text-align: center;
     font-size: 3rem;
-    width: 80%;
+    width: 350px;
   }
+
+  .subBtn {
+    width: 40%;
+  }
+
+  hr {
+    margin-top: 20px;
+  }
+
+
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
+
+  .signupForm {
+    text-align: center;
+    font-size: 3rem;
+    width: 90%;
+  }
+
   .title {
     font-size: 2rem;
   }
@@ -531,7 +548,6 @@ button:focus {
   }
 
   hr {
-    color: skyblue;
     margin-top: 20px;
   }
 
