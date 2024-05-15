@@ -42,7 +42,7 @@ app.use(
         resave: false,
         saveUninitialized: false,
         store: MongoStore.create({ 
-            mongoUrl: 'mongodb+srv://joe:nintendo4@pixelperfect.vswacvz.mongodb.net/Pixel?retryWrites=true&w=majority'
+            mongoUrl: process.env.DB_STRING
          }),
     })
 );
